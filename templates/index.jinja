@@ -1,0 +1,15 @@
+{% extends "base.jinja" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+  <h1>Salut {{ nom }} 👋</h1>
+  <p>Si tu vois ça, Jinja fonctionne sur le serveur.</p>
+
+  <h2>Checklist</h2>
+  <ul>
+    {% for item in cours %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
